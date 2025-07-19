@@ -42,3 +42,6 @@ This is built by yomex with documentation
 
 18. pip install django-filter
 
+19. pip install drf-spectacular
+
+
