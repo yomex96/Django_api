@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'bookings',
     'dashboard',
     'django_filters',
+    'drf_spectacular',
 
 ]
 
@@ -62,9 +63,7 @@ LOGIN_REDIRECT_URL = '/dashboard/'
 
 REST_FRAMEWORK = {
     
-        'DEFAULT_AUTHENTICATION_CLASSES': (
-        'rest_framework_simplejwt.authentication.JWTAuthentication',
-    ),
+     'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
     'PAGE_SIZE': 10,  # Number of records per page
      'DEFAULT_FILTER_BACKENDS': (
