@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'bookings',
+    'dashboard',
 
 ]
 
@@ -54,10 +55,14 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'booking_api.urls'
 
+LOGIN_REDIRECT_URL = '/dashboard/'
+
+# LOGOUT_REDIRECT_URL = '/login/'
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR / 'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
