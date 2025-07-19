@@ -42,9 +42,14 @@ This is built by yomex with documentation
 
 18. pip install django-filter
 
-19. pip install drf-spectacular
+    
+20.  pip install drf-spectacular
 
-// unit test
-20. python manage.py test bookings
+ // migrate the database
+ 
+21.  python manage.py test bookings dydy
+    
+  
+  
 
 
