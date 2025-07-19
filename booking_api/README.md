@@ -36,14 +36,18 @@ This is built by yomex with documentation
 
 <!-- Error detecting -->
 
-16.  from bookings.views import BookingViewSet  
+16.  from bookings.views import BookingViewSet
 
-17. python manage.py createsuperuser
+17.  pip install djangorestframework-simplejwt
 
-18. pip install django-filter
+18.  pip install djangorestframework.authtoken
+
+19. python manage.py createsuperuser
+
+20. pip install django-filter
 
     
-20.  pip install drf-spectacular
+21.  pip install drf-spectacular
 
  // migrate the database
  
