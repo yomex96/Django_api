@@ -44,4 +44,7 @@ This is built by yomex with documentation
 
 19. pip install drf-spectacular
 
+// unit test
+20. python manage.py test bookings
+
 
